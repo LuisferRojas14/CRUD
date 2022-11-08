@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+   <fieldset>
+    <legend>
+        <h2>Formulario</h2>
+    </legend>
+   <form id="form">
+    <input type="text" id="Nombre" name="nombre" placeholder="Nombre"><br></br>
+    <input type="text" id="Trabajo" name="Trabajo" placeholder="Trabajo"><br></br>
+    <input type="text" id="Experiencia" name="Experiencia " placeholder="Experiencia"><br></br>
+    <input type="button" value="Enviar" id="btn" onclick="Enviar()">
+    <input type="reset" value="Restablecer">
+   </form>
+   </fieldset>
+   <br>
+   <div id="msg"></div></br>
+   <fieldset>
+    <legend>
+        <h2>Datos del almacenamiento local</h2>
+    </legend>
+    <table border="2" id="table">
+        <tr>
+            <td class=".Col">Nombre</td>
+            <td class=".Col">Trabajo</td>
+            <td class=".Col">Experiencia</td>
+            <td class=".Col">Accion</td>
+        </tr>
+    </table>
+   </fieldset>
+</body>
+<script src="script.js"></script>
+</html>
